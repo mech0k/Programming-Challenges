@@ -1,4 +1,4 @@
-# Programming Challenges\
+# Programming Challenges
 Kattis Challenges\
 LeetCode Challenges\
 hackerrank Challenges\
