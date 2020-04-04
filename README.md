@@ -1,5 +1,5 @@
 # Programming Challenges
 Kattis Challenges\
 LeetCode Challenges\
-hackerrank Challenges\
+Hackerrank Challenges\
 python3 and c++
