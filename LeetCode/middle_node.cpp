@@ -10,11 +10,10 @@ struct ListNode{
 ListNode* middleNode(ListNode* head){
     ListNode* ans = head;
     int count = 0;
-    while(head->next != NULL){
+    while(head != NULL){
         head = head->next;
         count++;
     }
-    count++;
     for(int i = 0; i < count / 2; i++){
         ans = ans->next;
     }
