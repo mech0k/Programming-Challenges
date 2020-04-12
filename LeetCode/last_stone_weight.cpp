@@ -2,8 +2,7 @@
 using namespace std;
 
 // priority queue and heap are also viable options
-int lastStoneWeight(vector<int> & st){
-    vector<int> stones = st;
+int lastStoneWeight(vector<int> & stones){
     while(stones.size() > 1){
         sort(stones.begin(), stones.end());
         int y = stones.back();
