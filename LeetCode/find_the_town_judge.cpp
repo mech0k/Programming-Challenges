@@ -2,18 +2,13 @@
 using namespace std;
 
 int findJudge(int n, vector<vector<int>> & t){
-    if(n == 1 && t.size() == 0) return 1;
     int arr[1000] {0};
-    bool b_arr[1000] {0};
     for(auto i: t){
-        arr[i[1]-1] += 1;
-        b_arr[i[0]-1] = true;
+        arr[i[1]-1] ++;
+        arr[i[0]-1] --;
     }
-    for(auto i: t){
-        if(arr[i[1]-1] == n-1 && b_arr[i[1]-1] == false){
-            return i[1];
-        }
-    }
+    for(int i = 0; i < n; i++)
+        if(arr[i] == n-1) return i+1;
     return -1;
 }
 
